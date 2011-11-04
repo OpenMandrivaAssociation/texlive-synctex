@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-synctex
-Version:	20111103
+Version:	20111104
 Release:	1
 Summary:	TeXLive synctex package
 Group:		Publishing
@@ -29,6 +29,7 @@ TeXLive synctex package.
 %doc %{_texmfdir}/doc/man/man1/synctex.man1.pdf
 %doc %{_mandir}/man5/synctex.5*
 %doc %{_texmfdir}/doc/man/man5/synctex.man5.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -43,3 +44,5 @@ mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
 mkdir -p %{buildroot}%{_mandir}/man5
 mv %{buildroot}%{_texmfdir}/doc/man/man5/*.5 %{buildroot}%{_mandir}/man5
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
