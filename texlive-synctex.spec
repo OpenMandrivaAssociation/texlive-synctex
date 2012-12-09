@@ -1,12 +1,12 @@
-# revision 26689
+# revision 23089
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-synctex
-Version:	20120808
-Release:	1
+Version:	20111104
+Release:	2
 Summary:	TeXLive synctex package
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -41,3 +41,17 @@ mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
 mkdir -p %{buildroot}%{_mandir}/man5
 mv %{buildroot}%{_texmfdir}/doc/man/man5/*.5 %{buildroot}%{_mandir}/man5
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111104-2
++ Revision: 756419
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111104-1
++ Revision: 719625
+- texlive-synctex
+- texlive-synctex
+- texlive-synctex
+- texlive-synctex
+
