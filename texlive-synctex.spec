@@ -1,12 +1,12 @@
-# revision 23089
+# revision 29764
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-synctex
-Version:	20111104
-Release:	2
+Version:	20131010
+Release:	1
 Summary:	TeXLive synctex package
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -24,9 +24,9 @@ TeXLive synctex package.
 #-----------------------------------------------------------------------
 %files
 %doc %{_mandir}/man1/synctex.1*
-%doc %{_texmfdir}/doc/man/man1/synctex.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/synctex.man1.pdf
 %doc %{_mandir}/man5/synctex.5*
-%doc %{_texmfdir}/doc/man/man5/synctex.man5.pdf
+%doc %{_texmfdistdir}/doc/man/man5/synctex.man5.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -36,22 +36,8 @@ TeXLive synctex package.
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
 mkdir -p %{buildroot}%{_mandir}/man5
-mv %{buildroot}%{_texmfdir}/doc/man/man5/*.5 %{buildroot}%{_mandir}/man5
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111104-2
-+ Revision: 756419
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111104-1
-+ Revision: 719625
-- texlive-synctex
-- texlive-synctex
-- texlive-synctex
-- texlive-synctex
-
+mv %{buildroot}%{_texmfdistdir}/doc/man/man5/*.5 %{buildroot}%{_mandir}/man5
