@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-synctex
 Version:	20131010
-Release:	5
+Release:	6
 Summary:	TeXLive synctex package
 Group:		Publishing
 URL:		http://tug.org/texlive
