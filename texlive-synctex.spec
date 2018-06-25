@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-synctex
-Version:	20171118
+Version:	20180617
 Release:	1
 Summary:	TeXLive synctex package
 Group:		Publishing
