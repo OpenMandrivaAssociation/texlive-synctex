@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-synctex
-Version:	20180617
-Release:	2
+Version:	20190327
+Release:	1
 Summary:	TeXLive synctex package
 Group:		Publishing
 URL:		http://tug.org/texlive
