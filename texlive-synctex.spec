@@ -1,6 +1,6 @@
 Name:		texlive-synctex
-Version:	54074
-Release:	2
+Version:	66203
+Release:	1
 Summary:	TeXLive synctex package
 Group:		Publishing
 URL:		http://tug.org/texlive
